@@ -16,13 +16,17 @@ These steps will primarily happen on the command line. Make sure you have the Gi
 6. Push your changes to your forked repo
     * `git push`
 7. Open a pull request to merge your changes into the original repo (can also do this on the GitHub website)
-    * `gh pr create --assignee "@YOURPARTNER"`
+    * `gh pr create`
 8. Review your partner's pull request and merge it into the original repo (can also do this on the GitHub website)
+    * Note that the maintainer (an informatics staff) will have to approve the pull request, as this repo is owned by the informatics organization. So the below is for demonstration purposes only
     * `gh pr checkout PRNUMBER`
     * `gh pr merge`
 9. On your fork, sync your fork so your repo is updated (Do this on the github website)
 10. Pull the changes from the your fork into your local repo
     * `git pull`
+
+Here is a diagram of what you'll be doing in this part:
+![Diagram of what you'll be doing in part 1](/img/Slide6.png)
 
 Now we will be working on GitHub Desktop, the GitHub website, or VSCode git integration. Use whichever GUI you prefer. The equivalent command line commands to GUI options are printed below each step. We will be creating a branch and then working on the same file on two different branches to create a merge conflict. Branches are great for experimenting on a feature or fixing a bug without affecting the main code, but they can cause merge conflicts if two branches change the same line of code.
 
@@ -69,12 +73,4 @@ gitGraph
 
 For reference, this is the gitflow diagram for the above steps:
 
-```mermaid
-gitGraph
-    commit id: "Add empty haiku file"
-    branch haiku-test
-    commit id: "Add haiku lines"
-    checkout main
-    commit id: "Add haiku line"
-    merge haiku-test type: highlight tag: "merge conflict"
-```
+![Diagram of what you'll be doing in part 2](/img/Slide7.png)
