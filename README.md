@@ -2,7 +2,7 @@
 
 We will be running through this repo using first the command line and then GitHub Desktop or VSCode git integration.
 
-These steps will primarily happen on the command line. Make sure you have the GitHub CLI installed and authenticated if you want to use the command line to do the pull request. Otherwise, you can use the GitHub website.
+These steps will primarily happen on the command line.
 
 0. Break into pairs
 1. Fork this repo (and name the forked repo `github-intro-YOURNAME`)
@@ -17,8 +17,8 @@ These steps will primarily happen on the command line. Make sure you have the Gi
     * `git push`
 7. Open a pull request to merge your changes into the original repo (can also do this on the GitHub website)
     * `gh pr create`
-8. Review your partner's pull request and merge it into the original repo (can also do this on the GitHub website)
-    * Note that the maintainer (an informatics staff) will have to approve the pull request, as this repo is owned by the informatics organization. So the below is for demonstration purposes only
+8. The maintainer (the instructor) will now review and approve your pull request
+    * Note that the maintainer (an informatics staff) will have to approve the pull request, as this repo is owned by the informatics organization. So the below two lines is for reference if you have your own repo.
     * `gh pr checkout PRNUMBER`
     * `gh pr merge`
 9. On your fork, sync your fork so your repo is updated (Do this on the github website)
