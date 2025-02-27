@@ -1,15 +1,15 @@
 # github-intro
 
-We will be running through this repo using first the command line and then GitHub Desktop or VSCode git integration.
 
-These steps will primarily happen on the command line.
+## Intro activity 1
 
-0. Break into pairs
+You may perform these steps on the command line or using your preferred GitHub UI such as GitHub Desktop or VSCode/other IDE git integration. The command line commands are printed below each step. **IMPORTANT**: In order to run the `gh` command line actions, you must first have installed [gh cli](https://cli.github.com) and authenticated your local machine using the command `gh auth login`, then following the prompts. 
+
 1. Fork this repo (and name the forked repo `github-intro-YOURNAME`)
 2. Clone your forked repo onto your local computer
     * `git clone https://github.com/YOURUSERNAME/github-intro.git`
 3. Open the repo folder in VSCode or your preferred text editor
-4. Add a file to study spaces recommending a good place to do computer work near Harvard
+4. Add a file to the study spaces folder recommending a good place to do computer work near Harvard
 5. Commit your changes
     * `git add FILENAME`
     * `git commit -m "Add study spaces file"`
@@ -28,9 +28,13 @@ These steps will primarily happen on the command line.
 Here is a diagram of what you'll be doing in this part:
 ![Diagram of what you'll be doing in part 1](/img/Slide6.png)
 
+
+## Intro activity 2
+
 Now we will be working on GitHub Desktop, the GitHub website, or VSCode git integration. Use whichever GUI you prefer. The equivalent command line commands to GUI options are printed below each step. We will be creating a branch and then working on the same file on two different branches to create a merge conflict. Branches are great for experimenting on a feature or fixing a bug without affecting the main code, but they can cause merge conflicts if two branches change the same line of code.
 
 Example of branching:
+
 ```mermaid
 gitGraph
     commit
@@ -48,7 +52,7 @@ gitGraph
     * `git add haikus/haiku_yourname.md`
     * `git commit -m "Add empty haiku file"`
     * `git push`
-3. Start a new branch called `haiku-test` (substituting your name for NAME)
+3. Start a new branch called `haiku-test`
     * `git checkout -b haiku-test`
 4. Write 1-2 lines of the haiku and save it in the `haikus` folder
 5. Commit your changes & push it
@@ -66,8 +70,8 @@ gitGraph
     * `gh pr create`
     * `gh pr checkout PRNUMBER`
     * `gh pr merge`
-9. Use the GitHub interface or VSCode to resolve the merge conflict
-10. Delete the branch once you are done merging (using the GitHub web interfact, command line version printed for reference)
+9. Use the GitHub web interface or VSCode to resolve the merge conflict
+10. Delete the branch once you are done merging (using the GitHub web interface, command line version printed for reference)
     * `git branch -d haiku-test`
 11. (Optional) Submit a pull request to the original repo with your haiku so we can all see it!
 
