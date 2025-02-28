@@ -1,1 +1,1 @@
-homotopy group of spheres.
+homotopy group of n-spheres.
